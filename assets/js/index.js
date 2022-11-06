@@ -34,7 +34,9 @@ function getUserInfo() {
         // },
         success: function(res) {
             if (res.status !== 0) {
+                console.log(res)
                 return layer.msg('获取用户信息失败')
+
             }
             layer.msg('获取用户信息成功')
             console.log(res);
